@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD 產品展示</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      .solution {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+      }
+      .solution li {
+        width: 100%;
+        margin-bottom: 20px;
+        list-style: none;
+      }
+      .kimtech-product {
+        padding: 20px;
+        background-color: lightblue;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+      .kimtech-product:hover {
+        transform: scale(1.05);
+      }
+      .kimtech-product img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .kimtech-product ul {
+        list-style: none;
+        padding: 0;
+      }
+      .kimtech-product li {
+        margin-bottom: 10px;
+      }
+      .solution li a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+      /* RWD 設計 */
+      @media (max-width: 599px) {
+        .solution li {
+          width: 100%;
+        }
+      }
+      @media (min-width: 600px) {
+        .solution li {
+          width: 48%;
+        }
+      }
+      @media (min-width: 1024px) {
+        .solution li {
+          width: 48%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>產品展示</h1>
+    <ul class="solution">
+      <li>
+        <a href="#">
+          <div class="kimtech-product">
+            <h3>KIMTECH SCIENCE Kimwipes 精密科學擦拭紙</h3>
+            <img src="https://via.placeholder.com/300" alt="kimtech產品照" />
+            <ul>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="kimtech-product">
+            <h3>KIMTECH SCIENCE Kimwipes 精密科學擦拭紙</h3>
+            <img src="https://via.placeholder.com/300" alt="kimtech產品照" />
+            <ul>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+              <li>
+                <h4>低掉塵</h4>
+                <p>超薄100%原生紙漿，質地細膩擦拭時能保護脆弱的器材表面</p>
+              </li>
+            </ul>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>

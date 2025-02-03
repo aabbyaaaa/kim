@@ -1,0 +1,1307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #dededf;
+  width: 100%;
+  margin: auto;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  position: relative;
+}
+
+.kim-banner img {
+  max-width: 1220px;
+  width: 100%;
+}
+
+.all-brand {
+  margin: auto;
+}
+
+/*.all-brand {
+  display: flex;
+  justify-content: center;
+}*/
+
+.brand-logo {
+  /*width: 100%;
+  padding: 20px;
+  background-color: lightblue;
+  margin: 10px 0;
+  text-align: center;*/
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0099cc;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  justify-content: center;
+
+  color: white;
+  font-size: 16px;
+}
+
+.brand-logo.wypall {
+  background-color: #cc3333;
+}
+
+.brand-logo.kimtech {
+  background-color: #6633cc;
+}
+
+.brand-logo a {
+  display: block;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.all-brand .brand-logo .logo {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.all-brand .brand-logo .icon {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  margin: 0 auto;
+}
+
+.all-brand li:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* RWD 設計 */
+@media (min-width: 600px) {
+  .brand-logo {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 100%;
+  }
+  .all-brand {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .all-brand .brand-logo .icon {
+    display: none;
+  }
+}
+
+/* KIMTECH */
+.intro img {
+  max-width: 1220px;
+  width: 100%;
+}
+
+.kimtech-background-img {
+  background-image: url("https://cdn.shopify.com/s/files/1/0204/3327/2854/files/07_5e5f31c5-cb5a-43f0-818f-579152313d9b.png?v=1737503548");
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.kimtech-background-img .big {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6633cc;
+  padding-bottom: 20px;
+  padding-top: 60px;
+}
+
+.kimtech-background-img p {
+  padding: 10px 50px 50px 50px;
+  color: #6633cc;
+  font-size: 18px;
+}
+
+/* RWD 設計 */
+@media (min-width: 600px) {
+  .brand-logo {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    width: 100%;
+  }
+  .all-brand {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .kimtech-background-img .big {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .kimtech-background-img p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+/* KIMTECH 應用場景*/
+.kimtech-scenario p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.kimtech-scenario img {
+  width: 170px;
+}
+
+.kimtech-scenario sapm {
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.scenario {
+  display: flex;
+  background-color: #333366;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex;
+}
+
+.kimtech-scenario {
+  background-color: #333366;
+  color: white;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.kimtech-industry {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.kimtech-industry:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.kimtech-industry h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.kimtech-industry img {
+  margin: auto;
+  display: block;
+  width: 150px;
+}
+
+.kimtech-industry p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .kimtech-industry {
+    width: 100%;
+  }
+  .kimtech-industry p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .kimtech-industry {
+    width: 29%;
+  }
+}
+/* KIMTECH 解決方案*/
+
+.kimtech-solution {
+  width: 100%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.kimtech-solution img {
+  width: 170px;
+}
+
+.kimtech-solution sapm {
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #6633cc;
+}
+
+.kimtech-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.kimtech-product ul {
+  list-style: square;
+  padding: 30px;
+}
+.kimtech-product li::marker {
+  color: #6633cc;
+  font-size: 30px;
+}
+
+.kimtech-product h3 {
+  font-size: 20px;
+  color: #6633cc;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.kimtech-product h4 {
+  font-size: 18px;
+  color: #6633cc;
+  font-weight: 600;
+}
+
+.kimtech-product a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.solution a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+/* 以下是測試 */
+
+/* RWD 設計 */
+
+/*這個用不到，要寫在.product
+.solution {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+} */
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.solution li {
+  width: 100%;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.kimtech-product {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.kimtech-product:hover {
+  border: 2px solid #6633cc;
+  transform: scale(1);
+}
+
+.kimtech-product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.kimtech-product ul {
+  list-style: square;
+  padding: 0px 20px 20px 20px;
+  text-align: -5px;
+}
+.kimtech-product li {
+  margin-bottom: 10px;
+}
+
+.solution li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.kimtech-product li::marker {
+  color: #6633cc;
+  font-size: 30px;
+  padding-left: 1px;
+  margin-right: 0px; /* 調整與文字的距離 */
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .solution li {
+    width: 100%;
+  }
+
+  .kimtech-product p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .solution li {
+    width: 46%;
+  }
+  /*上面的49%把整個產品卡都同等縮到49%，要把下方的文字回到100%，所以寫了下一行CSS*/
+
+  .kimtech-product li {
+    width: 100%;
+  }
+}
+
+.wrap2 {
+  width: 90%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wypall-intro img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.wypall-intro p {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wypall-intro {
+  padding: 80px;
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .wypall-intro {
+    padding: 20px;
+  }
+  .wypall-intro p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+}
+
+/* wypall 應用場景標題 */
+.wypall-intro2 img {
+  width: 170px;
+}
+
+.wypall-intro2 sapm {
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #cc3333;
+}
+
+.wypall-intro2 {
+  padding: 50px;
+}
+
+.wypall-intro2 p {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+/* wypall 應用場景圖 */
+
+.wypall-industry-list {
+  display: flex;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.wypall-industry-pic {
+  width: 100%;
+  max-width: 240px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wypall-industry-pic spam {
+  font-weight: 800;
+  color: #cc3333;
+  padding-right: 10px;
+}
+
+.wypall-industry-pic h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #cc3333;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.wypall-industry-pic p {
+  padding-bottom: 10px;
+}
+
+.wypall-industry-pic img {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.wyapll-industry img {
+  width: 100%;
+  max-width: 50px;
+}
+
+@media (min-width: 600px) {
+  .wypall-industry-pic {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .wypall-industry-pic {
+    width: 100%;
+  }
+}
+/*前面調整之後，不要忘記改媒體查詢，有時候是這裡沒改道*/
+
+.wypall-comparing img {
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1220px;
+}
+
+/* wypall 解決方案 */
+
+.wypall-solution {
+  width: 100%;
+  padding: 0px 40px 40px 55px; /*改產品周圍的距離*/
+  margin: 0 auto;
+}
+
+.wypall-solution img {
+  width: 170px;
+}
+
+.wypall-solution sapm {
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #cc3333;
+}
+
+.wypall-product-big img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.wypall-product-big ul {
+  list-style: square;
+  padding: 0px;
+}
+
+.wypall-product-big li::marker {
+  color: #cc3333;
+  font-size: 30px;
+}
+
+.wypall-product-big h3 {
+  font-size: 20px;
+  color: #cc3333;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.wypall-product-big h4 {
+  font-size: 18px;
+  color: #cc3333;
+  font-weight: 600;
+}
+
+.wypall-product-big {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.wypall-solution a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.wypall-product-small p {
+  text-align: left;
+}
+
+.wypall-product-wrap {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1220px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wypall-solution-wrap li {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 60px;
+}
+
+.wypall-product-big li {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wypall-product-big {
+  padding: 20px 20px 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.wypall-product-big:hover {
+  border: 2px solid #cc3333;
+  transform: scale(1);
+}
+
+.wypall-product-big img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
+}
+
+.wypall-product-big ul {
+  list-style: square;
+  padding: 20px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  text-align: -5px;
+}
+.wypall-product-big li {
+  margin-bottom: 0px;
+}
+
+.wypall-solution-wrap li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .wypall-solution-wrap li {
+    width: 100%;
+  }
+  .wypall-product-big p {
+    font-size: 15px;
+  }
+
+  .wypall-product-small p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wypall-solution-wrap li {
+    width: 28%;
+  }
+  /*上面的49%把整個產品卡都同等縮到49%，要把下方的文字回到100%，所以寫了下一行CSS*/
+
+  .wypall-product-big li {
+    width: 100%;
+  }
+}
+
+/* scott 區塊 */
+
+.scott-banner {
+  max-width: 1220px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.slogan {
+  max-width: 900px;
+  width: 100%;
+  padding-bottom: 30px;
+  display: block; /*我下margin沒有置中，因為要先下display:block*/
+  margin: 0 auto;
+}
+
+.scott-intro video {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 60px;
+  display: block;
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .scott-intro {
+    max-width: 1220px;
+    width: 100%;
+  }
+  .scott-intro video {
+    width: 60%;
+  }
+  .slogan {
+    width: 90%;
+    padding-bottom: 0px;
+  }
+}
+
+.scott-solution {
+  width: 100%;
+  padding: 20px 50px 10px 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.scott-solution img {
+  width: 170px;
+}
+
+.scott-solution p {
+  padding-left: 0px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #0099cc;
+}
+
+.scott-industry {
+  margin: 0 auto;
+  display: flex;
+  width: 1220px;
+}
+
+.scott-industry-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.scott-industry-card-item {
+  padding: 20px 20px 20px 20px;
+  /* border: 1px solid #cccccc;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;*/
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  transition: transform 0.3s;
+  margin: 20px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.scott-industry-card img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.scott-product {
+  display: flex;
+}
+
+.scott-industry-card-item h4 {
+  padding-left: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0099cc;
+
+  padding-bottom: 5px;
+}
+
+.scott-industry-card-item h5 {
+  padding-left: 0px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+/*----------------------*/
+
+.scott-product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.scott-product-card ul {
+  list-style: square;
+  padding: 30px;
+}
+.scott-product-card li::marker {
+  color: #0099cc;
+  font-size: 30px;
+}
+
+.scott-product-card h3 {
+  font-size: 20px;
+  color: #0099cc;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.scott-product-card h4 {
+  font-size: 18px;
+  color: #0099cc;
+  font-weight: 600;
+}
+
+.scott-product-card a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+.scott-product-wrap a {
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 16px 0px;
+  width: 100%;
+  height: 100%;
+  color: #333;
+}
+
+/* 以下是測試 */
+
+/* RWD 設計 */
+
+/*這個用不到，要寫在.product
+.solution {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+} */
+
+.soctt-product {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.soctt-product li {
+  width: 100%;
+  margin: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.scott-product-card {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.scott-product-card:hover {
+  border: 2px solid #0099cc;
+  transform: scale(1);
+}
+
+.scott-product-card img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin-bottom: 0px;
+  margin: 0 auto;
+}
+
+.scott-product-card ul {
+  list-style: square;
+  padding: 20px;
+  text-align: -5px;
+}
+.scott-product-card li {
+  margin-bottom: 10px;
+}
+
+.scott-product-wrap li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.scott-product-card li::marker {
+  color: #0099cc;
+  font-size: 30px;
+  padding-left: 1px;
+  margin-right: 0px; /* 調整與文字的距離 */
+}
+
+.scott-product-wrap {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* RWD 設計 */
+@media (max-width: 599px) {
+  .scott-product-wrap li {
+    width: 100%;
+  }
+
+  .scott-product-card p {
+    font-size: 15px;
+  }
+  .scott-product-wrap {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scott-product-wrap li {
+    width: 46%;
+  }
+  /*上面的49%把整個產品卡都同等縮到49%，要把下方的文字回到100%，所以寫了下一行CSS*/
+
+  .scott-product-card li {
+    width: 100%;
+  }
+}
+
+/*menu開始*/
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ededed;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 0px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.menu-wrap {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 40px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 599px) {
+  /*.logo {
+    margin: 0 auto;
+  }  這個不需要，因為這個我的手機版LOGO一直*/
+
+  .logo img {
+    padding-left: 0px;
+  }
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu a:hover {
+  color: rgb(0, 129, 192);
+  border-bottom: 3px solid rgb(0, 129, 192);
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+  }
+  .menu.active {
+    display: flex;
+    background-color: #0081a4;
+  }
+  .menu li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+    padding-right: 50px;
+  }
+  .menu-wrap {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .menu a {
+    color: #dededf;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .menu a:hover {
+    background-color: rgb(38, 183, 188);
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    color: #dededf;
+  }
+
+  .wypall-industry-list {
+    display: flex;
+    width: 100%;
+    padding-left: 70px;
+    flex-wrap: wrap;
+  }
+}
+
+/*CSS 設計，讓按鈕固定在右下角*/
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+
+.chat-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 當螢幕寬度超過 1200px 時 */
+@media (min-width: 1200px) {
+  .floating-btn {
+    right: calc(50% - 750px + 50px); /* 1200px 容器的右邊距 */
+  }
+}
+
+/*floating-menu 右側浮動欄位*/
+
+.floating-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.menu-item2 {
+  display: block;
+  margin: 10px 0;
+}
+
+.menu-item2 img {
+  width: 50px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-item2:hover {
+  transform: scale(1.1); /* 增大圖片，創建懸浮效果 */
+  transition: transform 0.3s ease;
+}
+
+/* 高亮顯示被選中的菜單項目 */
+.menu-item2.active {
+  opacity: 1;
+  border: 2px solid #000;
+  transform: scale(1.1); /* 選中後放大 */
+}
+
+/* 當螢幕寬度超過 1200px 時 */
+@media (min-width: 1200px) {
+  .floating-menu {
+    right: calc(50% - 750px + 50px); /* 1200px 容器的右邊距 */
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-menu {
+    display: none;
+  }
+}
